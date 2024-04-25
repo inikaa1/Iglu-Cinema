@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/tab_logo.png">
+</head>
+
+<body>
+    <!-- menu naviation -->
+    <div class="menu">
+        <a class="links" href="index.html">About Us</a>
+    </div>
+
+    <!-- Signup form -->
+    <div class="userLoginSection">
+        <img src="Images/IMG_2703copy.jpg">
+        <div class="cont">
+            <div class="form sign-in">
+                <h2>Sign In</h2>
+                <form action="home.html">
+                    <label>
+                        <span>Email Address</span>
+                        <input type="email" name="customer[email]" required>
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input type="password" name="password" required>
+                    </label>
+                    <button type="submit" class="submit"> Sign Up Now</button>
+                </form>
+                <p class="forgot-pass">Forgot Password ?</p>
+            </div>
+            <div class="sub-cont">
+                <div class="img">
+                    <div class="img-text m-up">
+                        <h2>Welcome!</h2>
+                        <p>Create your new account now</p>
+                    </div>
+                    <div class="img-text m-in">
+                        <h2>Already have an Account?</h2>
+                        <p>Signin and continue to your next movie</p>
+                    </div>
+                    <div class="img-btn">
+                        <span class="m-up">Sign Up</span>
+                        <span class="m-in">Sign In</span>
+                    </div>
+                </div>
+                <div class="form sign-up">
+                    <h2>Sign Up</h2>
+                    <form action="home.html">
+                        <label>
+                            <span>Name</span>
+                            <input type="text" required>
+                        </label>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="customer[email]" required>
+                        </label>
+                        <label>
+                            <span>Password</span>
+                            <input type="password" required>
+                        </label>
+                        <label>
+                            <span>Confirm Password</span>
+                            <input type="password" required>
+                        </label>
+                        <button type="submit" class="submit" onsubmit="emailValidity()"> Sign Up Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="login.js"></script>
+
+</body>
+
+</html>

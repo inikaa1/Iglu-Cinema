@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Pod</title>
+    <link rel="stylesheet" href="infopages.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/tab_logo.png">
+</head>
+
+<body>
+    <!-- menu naviation -->
+    <div class="menu">
+        <div class="userIcon">
+            <img class="hoverIcon" src="Images/user.png">
+            <div class="showImg">
+                <a href="index.html">Log Out</a>
+            </div>
+        </div>
+        <a class="links" href="home.html">About Us</a>
+        <!-- menu navigation for hoverable features -->
+        <div class="hoverMenu">
+            <button class="hoverMenuButton">Our Services </button>
+            <div class="hoverMenuLinks">
+                <a href="menu.html">Food and Drinks</a>
+                <a href="prices.html">Pricing and Packaging</a>
+            </div>
+        </div>
+
+        <div class="hoverMenu">
+            <button class="hoverMenuButton">Movies </button>
+            <div class="hoverMenuLinks">
+                <a href="selections.html">Movie Selection</a>
+                <a href="display.html">Display Option</a>
+            </div>
+        </div>
+
+        <div class="hoverMenu">
+            <button class="hoverMenuButton">Bookings </button>
+            <div class="hoverMenuLinks">
+                <a href="booking.html">Make A Booking</a>
+                <a href="ticket.html">Your Bookings</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax">
+        <div class="aboutUs">
+            <div class="text">
+                <br><br>
+                <h1 style="text-align: left; margin-left: 150px;">Display Options</h1>
+                <h3 style="text-align: left; margin-left: 150px;">We offer two display options for our users. <br> </h3>
+                <img src="Images/2.png" style="float:left; width: 18%">
+                <p style="text-align: left; margin-left: 150px;">We have a wide range of movies that we offer. You can
+                    visit the movie selection page and check if
+                    your movie is available. If your movie is available we will be able to project it for you in the
+                    Cinema. You just need to select "Movie from Selection" when you are making a booking. After your
+                    booking has been confirmed, simply come during your booking timming and let the reception know which
+                    movie you would like to play.
+                    <br><br>
+                    Additionally If your movie is not in the movie selection, please feel free to go to the our services
+                    tab and fill
+                    the feedback form to add the movie selection.
+                    <br><br><br>
+                </p>
+                <img src="Images/1.png" style="float:left; width: 18%">
+                <p style="text-align: left; margin-left: 150px;">We also offer the option to play a movie from your own
+                    device. Our system is compatible with all apple devices and allows airplay to an apple TV.
+                    Additionally, you can also temporaryly add login to third party applications much as netflix,
+                    disney+ or amazon prime. You can connect your phone, ipad, or laptop manully through the following
+                    cables: lightning, micro USB, HDMI. We do not provide device extentions, and request you to bring
+                    your own extention if the ports mentioned are not available on your device. <br><br></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <font size="-1">
+            <p>Contact No: +61 02 69968008</p>
+            <p>Email ID: inrynosa@ISYS2110.com</p>
+            <p><a class="link" href="Privacy Policy.pdf">Privacy Policy</a></p>
+        </font>
+    </div>
+
+    <!-- A button to open the popup form -->
+    <button class="open-button" onclick="openForm()">Feedback Form</button>
+
+    <!-- The form -->
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Feedback</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="email"><b>Feedback</b></label>
+            <input type="text" placeholder="Enter Feedback" name="email" required>
+
+            <button type="button" class="btn" onclick="closeForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

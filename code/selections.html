@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Movie</title>
+    <link rel="stylesheet" href="selections.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/tab_logo.png">
+    <script type="text/javascript">
+        window.onload = function () {
+            var today = new Date().toISOString().split('T')[0];
+            document.getElementsByName("date")[0].setAttribute('min', today);
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- menu naviation -->
+    <div class="menu">
+        <div class="userIcon">
+            <img class="hoverIcon" src="Images/user.png">
+            <div class="showImg">
+                <a href="index.html">Log Out</a>
+            </div>
+        </div>
+        <a class="links" href="home.html">About Us</a>
+        <!-- menu navigation for hoverable features -->
+        <div class="hoverMenu">
+            <button class="hoverMenuButton">Our Services </button>
+            <div class="hoverMenuLinks">
+                <a href="menu.html">Food and Drinks</a>
+                <a href="prices.html">Pricing and Packaging</a>
+            </div>
+        </div>
+
+        <div class="hoverMenu">
+            <button class="hoverMenuButton">Movies </button>
+            <div class="hoverMenuLinks">
+                <a href="selections.html">Movie Selection</a>
+                <a href="display.html">Display Option</a>
+            </div>
+        </div>
+
+        <div class="hoverMenu">
+            <button class="hoverMenuButton">Bookings </button>
+            <div class="hoverMenuLinks">
+                <a href="booking.html">Make A Booking</a>
+                <a href="ticket.html">Your Bookings</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="text">
+        <img style="width:100%" src="Images/movies.png">
+    </div>
+    <label style="color: white; font-size: x-large;">Sort By:</label><br><br>
+    <select name="Package">
+        <option value="title">Title</option>
+        <option value="genre">Genre</option>
+        <option value="year">Year</option>
+    </select>
+    <br><br>
+
+
+    <div class="movies">
+        <div class="row">
+            <div class="column">
+                <img src="Images/Movies/images-1.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/images-2.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/images-3.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/images-4.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="Images/Movies/images-5.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/images-6.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/images.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/onesheet.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="Images/Movies/images-7.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/images-8.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/images-9.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/images-10.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="Images/Movies/images-11.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/images-12.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/images-13.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Movies/156480R1.jpg" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <font size="-1">
+            <p>Contact No: +61 02 69968008</p>
+            <p>Email ID: inrynosa@ISYS2110.com</p>
+            <p><a class="link" href="Privacy Policy.pdf">Privacy Policy</a></p>
+        </font>
+    </div>
+
+    <!-- A button to open the popup form -->
+    <button class="open-button" onclick="openForm()">Feedback Form</button>
+
+    <!-- The form -->
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Feedback</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="email"><b>Feedback</b></label>
+            <input type="text" placeholder="Enter Feedback" name="email" required>
+
+            <button type="button" class="btn" onclick="closeForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

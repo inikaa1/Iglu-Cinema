@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Pod</title>
+    <link rel="stylesheet" href="infopages.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/tab_logo.png">
+</head>
+
+<body>
+    <!-- menu naviation -->
+    <div class="menu">
+        <div class="userIcon">
+            <img class="hoverIcon" src="Images/user.png">
+            <div class="showImg">
+                <a href="index.html">Log Out</a>
+            </div>
+        </div>
+        <a class="links" href="home.html">About Us</a>
+        <!-- menu navigation for hoverable features -->
+        <div class="hoverMenu">
+            <button class="hoverMenuButton">Our Services </button>
+            <div class="hoverMenuLinks">
+                <a href="menu.html">Food and Drinks</a>
+                <a href="prices.html">Pricing and Packaging</a>
+            </div>
+        </div>
+
+        <div class="hoverMenu">
+            <button class="hoverMenuButton">Movies </button>
+            <div class="hoverMenuLinks">
+                <a href="selections.html">Movie Selection</a>
+                <a href="display.html">Display Option</a>
+            </div>
+        </div>
+
+        <div class="hoverMenu">
+            <button class="hoverMenuButton">Bookings </button>
+            <div class="hoverMenuLinks">
+                <a href="booking.html">Make A Booking</a>
+                <a href="ticket.html">Your Bookings</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax">
+        <div class="aboutUs">
+            <div class="text">
+                <br><br>
+                <h1 style="text-align: left; margin-left: 80px;">Packages We Offer</h1>
+                <img src="Images/dollar.png" style="float:left; width: 10%">
+                <p style="text-align: left; margin-left: 80px;"> Standard 3 Hour: Free
+                    <br>
+                    Our STANDARD package is a 3 hour package where you can book the cinema for three hours. This package
+                    takes into account time taken to set up the movie.
+                    <br><br><br>
+                </p>
+                <img src="Images/dollar.png" style="float:left; width: 10%">
+                <p style="text-align: left; margin-left: 80px;"> Event 6 Hour: $20 per person
+                    <br>
+                    Our EVENT package is a 6 hour package where you can book the cinema for six hours. This package
+                    takes into account time taken to set up the movie. This package also includes three snack items and
+                    one drink from the menu for each person registered for the event. More food can be purchased at the
+                    venue during the booking time.
+                    <br><br><br>
+                </p>
+                <img src="Images/dollar.png" style="float:left; width: 10%">
+                <p style="text-align: left; margin-left: 80px;"> All Day: $50 per person
+                    <br>
+                    Our ALL DAY package is a 12 hour package where you can book the cinema for twelve hours. This
+                    package takes into account time taken to set up the movie. This package also includes two meals and
+                    one snack time from the menu with unlimited drinks. This applies to each person who has been
+                    registered for the event. More food can be purchased at the venue during the booking time.
+                    <br><br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <font size="-1">
+            <p>Contact No: +61 02 69968008</p>
+            <p>Email ID: inrynosa@ISYS2110.com</p>
+            <p><a class="link" href="Privacy Policy.pdf">Privacy Policy</a></p>
+        </font>
+    </div>
+
+    <!-- A button to open the popup form -->
+    <button class="open-button" onclick="openForm()">Feedback Form</button>
+
+    <!-- The form -->
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Feedback</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="email"><b>Feedback</b></label>
+            <input type="text" placeholder="Enter Feedback" name="email" required>
+
+            <button type="button" class="btn" onclick="closeForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

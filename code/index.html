@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Pod</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/tab_logo.png">
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="stopBack();">
+    <script>
+        function stopBack() {
+            window.history.go(1);
+        }
+    </script>
+    <!-- menu naviation -->
+    <div class="menu">
+        <a class="links" href="login.html">Signin</a>
+        <a class="links" href="index.html">About Us</a>
+    </div>
+    <div class="parallax">
+        <div class="testingScroll">
+            <img class="iglupresents" src="Images/iglupresents.png" id="igluImage">
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <div class="parallax">
+        <div class="aboutUs">
+            <div class="text">
+                <h1>About Us</h1>
+                <p>The Movie Pod is a private cinematic experience designed for YOU! <br><br> We aim to create a place
+                    for all youngsters to be able to enjoy their movie watching experience ranging from first class
+                    service to quality projection. Inspired by the principles of the Iglu student accommoadation, we
+                    guarantee your time spent here will be full of laughter and excitement. <br><br> Our online system
+                    allows you to be able to book your private cinema at your convenience. Signup/Login and get your
+                    booking now! <br> We also offer a wide range of services some of which include meal options, party
+                    packages and movie selections. Feel free to visit the 'Our Services' tab to see what we offer in
+                    detail. <br><br> We can't wait to give you your first class movie experience... So what are you
+                    waiting for?<br><br><br>
+
+                    <font size="-1">
+
+                        Made by: <br>
+                        Project Manager and Systems Analyst: Inika Anand - 510545406 <br>
+                        Business Analyst: Ryan Padamadan- 510283373 <br>
+                        Developer: Noe Jacob - 510207807 <br>
+                        Infrastructure Analyst: Satvika Vyas - 490596683</font>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax">
+        <div class="FAQs">
+            <div class="text">
+                <h1>FAQs</h1>
+            </div>
+        </div>
+
+        <br>
+
+
+        <div class="questions">
+            <div class="text3">
+                <p>1. How do you book a cinema room?</p>
+                <p>Yes, you need to create an account in order to create a booking and update it.</p>
+                <p>2. What is the maximum duration that a person can book a cinema room for? </p>
+                <p>Cinema rooms can be booked in 3 hour, 6 hour and 12 hour intervals</p>
+                <p>3. Is it possible to book multiple cinema rooms at the same time? </p>
+                <p>Yes. However, you will be charged a fee if you do not maintain the cleanliness standards.</p>
+                <p>4. Can I bring my own food and drinks? </p>
+                <p>5. What Is the maximum capacity of the cinema room? </p>
+                <p>A lot. Joking each cinema room has a maximum capacity of 20 people.</p>
+                <p>6. How can I cancel or change the timing of my booking?</p>
+                <p>You can go on your account information where you can see your previous bookings. After clicking on
+                    it, there will be an option to either cancel or change the booking timing <br>Note: You might be
+                    charged a cancellation fee or modification fee.</p>
+                <p>7. Are there any restrictions to the content used in the cinema room if cast from our own device?</p>
+                <p>No, there is no restriction to the content you can cast to the big screen.</p>
+                <p>8. What are the payment methods accepted by the system?</p>
+                <p>Visa, Mastercard and EFTPOS are accepted at the reception.<br>Note: EFTPOS has a 35c surcharge. Visa
+                    and Mastercard have a 1.75% surcharge.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <font size="-1">
+            <p>Contact No: +61 02 69968008</p>
+            <p>Email ID: inrynosa@ISYS2110.com</p>
+            <p><a class="link" href="Privacy Policy.pdf">Privacy Policy</a></p>
+        </font>
+    </div>
+
+    <!-- A button to open the popup form -->
+    <button class="open-button" onclick="openForm()">Feedback Form</button>
+
+    <!-- The form -->
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Feedback</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="email"><b>Feedback</b></label>
+            <input type="text" placeholder="Enter Feedback" name="email" required>
+
+            <button type="button" class="btn" onclick="closeForm()">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+<!-- sources:
+https://www.youtube.com/watch?v=sy9OI-ndKnc&ab_channel=wpshopmart
+https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs
+https://www.w3schools.com/howto/howto_css_dropdown.asp
+https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/#:~:text=Using%20Button%20Tag%20Inside%20%3Ca,which%20indicates%20the%20link's%20destination.
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax
+https://www.w3schools.com/css/css_positioning.asp
+https://www.w3schools.com/howto/howto_css_image_center.asp
+https://www.w3schools.com/howto/howto_css_parallax.asp
+https://www.geeksforgeeks.org/change-image-dynamically-when-user-scrolls-down-set-2/
+https://web.dev/css-scroll-snap/
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity
+https://www.tutorialspoint.com/how-to-stop-browser-s-back-button-using-javascript#:~:text=the%20last%20location.-,Syntax,stop%20the%20browser's%20back%20button.
+ -->
